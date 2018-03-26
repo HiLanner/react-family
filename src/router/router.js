@@ -8,8 +8,14 @@ const getRouter = () => (
         <div>
             <ul>
                 <li><Link to="/">首页</Link></li>
-                <li><Link></Link></li>
+                <li><Link to="/page1">Page1</Link></li>
             </ul>
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/page1" component={Page1} />
+            </Switch>
         </div>
     </Router>
 );
+
+export default getRouter

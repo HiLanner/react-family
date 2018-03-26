@@ -2,5 +2,10 @@
 node_modules/
 
 # 忽略打包的文件夹
-
 dist/
+
+# 忽略.history
+.history/
+
+#忽略.vscode
+.vscode/
